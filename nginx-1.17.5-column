@@ -97,7 +97,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
     && ln -sf /dev/stderr /var/log/nginx/error.log
 VOLUME /var/log/nginx
 
-VOLUME /etc/nginx/conf.d
+VOLUME /etc/nginx
 EXPOSE 80
 
 STOPSIGNAL SIGTERM
